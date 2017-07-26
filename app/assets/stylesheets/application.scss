@@ -1,0 +1,68 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+.container .info-title{color:#3d3d5c}
+.container #hello{font-family:'Open Sans';color:#73e600;font-size:50px;font-weight:700}
+.container #availabl{font-size:20px;color:#73e600}
+.container .info-item{margin-bottom:20px}
+.container .info-item #social,.container #desc{margin-bottom:18px}
+.container #desc{font-size:16px}
+.container .button{
+color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700;}
+.container .button:hover{text-decoration:none;opacity:0.6}
+.container .say{font-size:16px}
+.container .vertical{border-right:1px solid #bfbfbf;height:160px}
+.container .reference{font-size:13px;color:#707070}
+.container p+a{color:#707070}
+.container img{filter: brightness(120%); filter:contrast(150%);filter:saturate(150%)}
+.container .pro-name{color:#73e600}
+.container .source-code{font-size:14px;color:#505050}
+/*** cv ****/
+header h1{color:#73e600}header h2{color:#3d3d5c}
+.container hr{border:0.4px solid #d9d9d9}.container p{line-height:24px;font-size:16px}.container .work-title{font-size:18px;display: block;color:#3d3d5c}
+.container img{filter: brightness(120%)}
+.container .container p{line-height:16px}
+
+/**** shared ****/
+/*shared navbar */
+@import url('https://fonts.googleapis.com/css?family=Cookie|Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.custom-header{background-color:#202020;border-radius:0}
+.custom-header .container-fluid{width:750px}
+.custom-header h1{font-family:'Open Sans';text-shadow:none;width:160px;color:#ace600;font-weight:700;font-size:40px}
+.custom-header a,.custom-header a:hover{text-decoration:none}
+.custom-header a #career{color:#fff;font-size:22px;font-family:'Great Vibes'}
+.custom-header .nav li a{color:#bfbfbf}
+.custom-header .nav li a:hover{color:#ace600;background-color:#202020}
+.custom-header .nav li a hr{border: 1.4px solid #ace600;width:70px;}
+
+/* header */
+header{border:1px solid #bfbfbf;padding:30px 16px;border-radius:6px;background-color:#f2f2f2;color:#606060;margin-bottom:30px}
+.container i{font-size:125%;color:#707070}.container i:hover{color:black}
+.container{width:750px;animation:fade-in 3s forwards;}
+@keyframes fade-in{
+0%{opacity:0;}
+100%{opacity: 100%}
+}
+.container h4{color:#73e600;font-size:18px}
+/*contact*/
+.container #contact-wrap h1{margin-bottom:20px;color:#ace600}
+.container #contact-wrap input{border:1px solid #ccc;padding-left:15px;width:300px;margin-bottom:10px}
+.container #contact-wrap input[type=submit]{
+border-color:#99cc00;padding:3px;background-color:#ddff99;
+}
+.container #contact-wrap #msg{height:100px}
+.container #contact-wrap #myname{font-size:24px;color:#001b4d}
+
+/*responsive*/
+@media(min-width:768px){
+	.custom-header{padding:20px 50px;}
+	.container header,.container #contact-wrap{margin-top:250px}
+}
+/*footer*/
+footer{border-top:1px solid #bfbfbf;bottom:0px;padding-top:10px;padding-bottom:10px;background-color:#f2f2f2;margin-top:150px}
+/*general*/
+body{overflow-x:hidden;}
