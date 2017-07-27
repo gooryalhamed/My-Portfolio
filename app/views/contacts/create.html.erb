@@ -1,8 +1,7 @@
 <div id="flash-message">
-  <% flash.each do |key, value| %>
-    <div>
-      <a href="#" data-dismiss="alert">×</a>
-        <%= value %>
-    </div>
-  <% end %>
+	<% flash.each do |key, value| %>
+	<div>
+		<%= value %>
+	</div>
+	<% end %>
 </div>
