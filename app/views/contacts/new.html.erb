@@ -1,0 +1,26 @@
+<div align="center" id="contact-form">
+  <h3>Send A message to Us</h3>
+
+  <%= form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name, :required => true %>
+  </div>
+  <div>
+    <%= f.label :email %>
+    <%= f.email_field :email, :required => true %>
+  </div>
+  <div>
+    <%= f.label :message %>
+    <%= f.text_field :message, :as => :text, :required => true %>
+  </div>
+  
+  <div class= "hidden">
+    <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+  </div>
+  <div>
+  </br>
+  <%= f.submit 'Send', :class=> "btn btn-primary" %>
+</div>
+<% end %>
+</div>

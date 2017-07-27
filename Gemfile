@@ -23,6 +23,8 @@ gem 'coffee-rails', '~> 4.2'
 # use bootstrap library
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass', '~> 4.7.0'
+# for sending and recieving emails
+gem 'mail_form'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
