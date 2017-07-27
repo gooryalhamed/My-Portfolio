@@ -8,7 +8,4 @@ class ApplicationController < ActionController::Base
 
   def projects
   end
-  
-  def contact
-  end
 end

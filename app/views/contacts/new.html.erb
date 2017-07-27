@@ -1,26 +1,33 @@
-<div align="center" id="contact-form">
-  <h3>Send A message to Us</h3>
+<div id="contact-wrap">
+  <div class="row">
+    <h1>CONTACT ME</h1>
+    <div class="col-xs-6">
+      <p id="myname">Yardagan Al Hamed</p>
+      <p>Erbil-Iraq-Qushtapa Camp</p>
+      <p>Email: gooryalhamed@gmail.com</p>
+      <ul class="list-inline">
+        <li><a href="https://www.facebook.com/goory.alhamed" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://github.com/gooryalhamed" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCeXZ7WibE8Fb-2EnTHBqhDw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/yardagan-al-hamed-055702140/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
 
-  <%= form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name, :required => true %>
+    <div class="col-xs-6">
+      <p>looking forward to recieve your email</p>
+      <%= form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+      <%= f.text_field :name, :required => true, :placeholder => "Your Name" %>
+      <%= f.email_field :email, :required => true, :placeholder => "Your Email" %>
+      <%= f.text_field :message, :as => :text, :required => true,:placeholder => "Your Message", :id => "msg" %>
+      <%= f.submit 'Send'%>
+      <div class= "hidden">
+        <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <% end %>
+    </div>
   </div>
-  <div>
-    <%= f.label :email %>
-    <%= f.email_field :email, :required => true %>
-  </div>
-  <div>
-    <%= f.label :message %>
-    <%= f.text_field :message, :as => :text, :required => true %>
-  </div>
-  
-  <div class= "hidden">
-    <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
-  </div>
-  <div>
-  </br>
-  <%= f.submit 'Send', :class=> "btn btn-primary" %>
 </div>
-<% end %>
-</div>
+
+
+
+
