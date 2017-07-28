@@ -25,7 +25,43 @@ header h1{color:#73e600}header h2{color:#3d3d5c}
 .container hr{border:0.4px solid #d9d9d9}.container p{line-height:24px;font-size:16px}.container .work-title{font-size:18px;display: block;color:#3d3d5c}
 .container img{filter: brightness(120%)}
 .container .container p{line-height:16px}
+.tooltip1 {
+    position: relative;
+    display: inline-block;
+}
 
+.tooltip1 .tooltiptext {
+	position: absolute;
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip1 .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
 /**** shared ****/
 /*shared navbar */
 @import url('https://fonts.googleapis.com/css?family=Cookie|Great+Vibes');
