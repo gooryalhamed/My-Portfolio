@@ -7,8 +7,9 @@
 .container .info-title{color:#3d3d5c}
 .container #hello{font-family:'Open Sans';color:#73e600;font-size:50px;font-weight:700}
 .container #availabl{font-size:20px;color:#73e600}
-.container .info-item{margin-bottom:20px}
-.container .info-item #social,.container #desc{margin-bottom:18px}
+#first-col{padding-left:0px}
+.container .info-item{margin-bottom:20px;font-size:14px}
+.container .info-item #social,.container #desc{display:inline-block;margin-bottom:18px}
 .container #desc{font-size:16px}
 .container .button{
 color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700;}
