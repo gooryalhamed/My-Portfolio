@@ -28,7 +28,6 @@ header h1{color:#73e600}header h2{color:#3d3d5c}
 header h1,header .tooltip1{display:inline-block}
 .tooltip1 {
     position: relative;
-    display: inline-block;
 }
 
 .tooltip1 .tooltiptext {
@@ -41,7 +40,7 @@ header h1,header .tooltip1{display:inline-block}
     border-radius: 6px;
     padding: 5px 0;
     z-index: 1;
-    bottom: 125%;
+    bottom:130%;
     left: 50%;
     margin-left: -60px;
     opacity: 0;
