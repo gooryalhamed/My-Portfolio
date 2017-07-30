@@ -3,6 +3,7 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+@import "responsive";
 
 .container .info-title{color:#3d3d5c}
 .container #hello{font-family:'Open Sans';color:#73e600;font-size:50px;font-weight:700}
@@ -18,13 +19,11 @@ color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700;}
 .container .vertical{border-right:1px solid #bfbfbf;height:160px}
 .container .reference{font-size:13px;color:#707070}
 .container p+a{color:#707070}
-.container img{filter: brightness(120%); filter:contrast(150%);filter:saturate(150%)}
 .container .pro-name{color:#73e600}
 .container .source-code{font-size:14px;color:#505050}
 /*** cv ****/
-header h1{color:#73e600}header h2{color:#3d3d5c}
-.container hr{border:0.4px solid #d9d9d9}.container p{line-height:24px;font-size:16px}.container .work-title{font-size:18px;display: block;color:#3d3d5c}
-.container img{filter: brightness(120%)}
+header h1{color:#73e600}header h2{color:#234a51}
+.container hr{border:0.4px solid #d9d9d9}.container p{line-height:24px;font-size:16px}.container .work-title{font-size:18px;display: block;color:#234a51}
 .container .container p{line-height:16px}
 header h1,header .tooltip1{display:inline-block}
 .tooltip1 {
