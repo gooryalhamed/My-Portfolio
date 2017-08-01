@@ -2,7 +2,7 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
+/**** home ***/
 .container .info-title{color:#3d3d5c}
 .container #hello{font-family:'Open Sans';color:#73e600;font-size:50px;font-weight:700}
 .container #availabl{font-size:20px;color:#73e600}
@@ -60,8 +60,9 @@ header h1,header .tooltip1{display:inline-block}
     visibility: visible;
     opacity: 1;
 }
-/**** shared ****/
-/*layout*/
+
+/**** layout ****/
+
 @import url('https://fonts.googleapis.com/css?family=Cookie|Great+Vibes');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .custom-header{background-color:#202020;border-radius:0}
@@ -77,11 +78,11 @@ header h1,header .tooltip1{display:inline-block}
 .custom-header .navbar-toggle:hover{background-color:#ace600;color:#fff}
 footer{color:#bfbfbf;bottom:0px;padding-top:10px;padding-bottom:10px;background-color:#202020;margin-top:150px}
 #navbar-links{overflow:hidden;margin-top:40px}
+
 /*general*/
-body{overflow-x:hidden;}
+body{overflow-x:hidden}
 
-
-/* header */
+/**** header ****/
 header{
 border:1px solid #bfbfbf;padding:30px 16px;border-radius:6px;background-color:#f2f2f2;color:#606060;margin-bottom:30px;margin-top:235px
 }
@@ -95,7 +96,7 @@ border:1px solid #bfbfbf;padding:30px 16px;border-radius:6px;background-color:#f
 .container h4{color:#73e600;font-size:18px}
 .vertical{border-right:1px solid #bfbfbf;height:200px}
 
-/*contact*/
+/**** contact****/
 .container #contact-wrap h1{margin-bottom:20px;color:#ace600}
 .container #contact-wrap input{border:1px solid #ccc;padding-left:15px;width:300px;margin-bottom:10px}
 .container #contact-wrap input[type=submit]{
