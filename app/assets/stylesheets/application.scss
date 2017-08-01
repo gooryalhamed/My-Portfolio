@@ -8,10 +8,10 @@
 .container #availabl{font-size:20px;color:#73e600}
 #first-col{padding-left:0px}
 .container .info-item{margin-bottom:20px;font-size:14px}
-.container .info-item #social,.container #desc{display:inline-block;margin-bottom:18px}
-.container #desc{font-size:16px}
+.container .info-item #social,.container #desc{display:inline-block;margin-bottom:18px;font-size:16px}
 .container .button{
-color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700;}
+color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700
+}
 .container .button:hover{text-decoration:none;opacity:0.6}
 .container .say{font-size:16px}
 .container .vertical{border-right:1px solid #bfbfbf;height:160px}
@@ -19,7 +19,8 @@ color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700;}
 .container p+a{color:#707070}
 .container .pro-name{color:#73e600}
 .container .source-code{font-size:14px;color:#505050}
-/*** cv ****/
+
+/**** cv ****/
 header h1{color:#73e600}header h2{color:#234a51}
 .container hr{border:0.4px solid #d9d9d9}.container p{line-height:24px;font-size:16px}.container .work-title{font-size:18px;display: block;color:#234a51}
 .container .container p{line-height:16px}
@@ -76,7 +77,7 @@ header h1,header .tooltip1{display:inline-block}
 }
 .custom-header .navbar-toggle:hover{background-color:#ace600;color:#fff}
 footer{color:#bfbfbf;bottom:0px;padding-top:10px;padding-bottom:10px;background-color:#202020;margin-top:150px}
-#navbar-links{overflow:hidden}
+#navbar-links{overflow:hidden;margin-top:40px}
 /*general*/
 body{overflow-x:hidden;}
 
@@ -133,12 +134,8 @@ text-align: left;
 
 #contact-form,#flash-message{margin-top:260px}
 
-
 /*** responsive ***/
-@media(max-width:767px){
-     .custom-header h1{font-size:35px}
-     #career{font-size:18px}
-     .custom-header h1,#career{margin-left:16px}
-     .custom-header .container-fluid{width:100%}
-     .custom-header .navbar-toggle{margin-top:-50px}
+@media(max-width:768px){
+    .custom-header .navbar-header{margin-left:20px}
+    .custom-header .container-fluid{width:100%}
 }
