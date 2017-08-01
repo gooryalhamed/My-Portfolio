@@ -97,8 +97,10 @@ border:1px solid #bfbfbf;padding:30px 16px;border-radius:6px;background-color:#f
 .vertical{border-right:1px solid #bfbfbf;height:200px}
 
 /**** contact****/
-.container #contact-wrap h1{margin-bottom:20px;color:#ace600}
-.container #contact-wrap input{border:1px solid #ccc;padding-left:15px;width:300px;margin-bottom:10px}
+#contact-wrap h1{margin-bottom:20px;color:#ace600}
+#contact-wrap input{
+border:1px solid #ccc;padding-left:15px;width:300px;margin-bottom:10px
+}
 .container #contact-wrap input[type=submit]{
 border-color:#99cc00;padding:3px;background-color:#ddff99;
 }
@@ -143,5 +145,6 @@ text-align: left;
     .container{width:100%}
     header img{max-width:100%}
     #mycv{display:block;margin-bottom:20px;text-align:center}
-    .vertical{border:none;height:100%} 
+    .vertical{border:none;height:100%}
+    #contact-wrap input{width:100%} 
 }
