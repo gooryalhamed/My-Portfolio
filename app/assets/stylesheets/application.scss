@@ -21,7 +21,8 @@ color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700
 
 /**** cv ****/
 header h1{color:#73e600}header h2{color:#234a51}
-.container hr{border:0.4px solid #d9d9d9}.container p{line-height:24px;font-size:16px}.container .work-title{font-size:18px;display: block;color:#234a51}
+.container hr{border:0.4px solid #d9d9d9}
+.container p{line-height:24px;font-size:16px}.container .work-title{font-size:18px;display: block;color:#234a51}
 .container .container p{line-height:16px}
 header h1,header .tooltip1{display:inline-block}
 .tooltip1 {
@@ -68,19 +69,32 @@ header h1,header .tooltip1{display:inline-block}
 .custom-header{background-color:#202020;border-radius:0}
 .custom-header .container-fluid{width:750px}
 .custom-header h1{font-family:'Open Sans';text-shadow:none;width:160px;color:#ace600;font-weight:700;font-size:40px}
-.custom-header a,.custom-header a:hover{text-decoration:none}
+.custom-header .nav a,.custom-header .nav a:hover{
+text-decoration:none;background-color:#202020;color:#bfbfbf
+}
 #career{color:#fff;font-size:22px;font-family:'Great Vibes'}
-.custom-header .nav li a{color:#bfbfbf}
-.custom-header .nav li a:hover{color:#ace600;background-color:#202020}
-.custom-header .nav li a hr{border: 1.4px solid #ace600;width:70px;}
+.custom-header .nav li{width:94px;margin-right:10px}
+.custom-header .nav a::before{
+content:"";position:absolute;background-color:#bfbfbf;height:2px;
+width:100%;transition:all 0.3s;top:3px;left:0px
+}
+
+.custom-header .nav a:hover{
+background-color:#202020;color:#ace600
+}
+.custom-header .nav a:hover::before{
+   height:3px;background-color:#ace600
+}
+
 .custom-header .navbar-toggle{background-color:#fff;color:#ace600;
 }
 .custom-header .navbar-toggle:hover{background-color:#ace600;color:#fff}
 footer{color:#bfbfbf;bottom:0px;padding-top:10px;padding-bottom:10px;background-color:#202020;margin-top:150px}
-#navbar-links{overflow:hidden;margin-top:40px}
+#navbar-links{overflow:hidden;margin-top:80px}
 
 /*general*/
 body{overflow-x:hidden}
+body a:hover{text-decoration:none}
 
 /**** header ****/
 header{
