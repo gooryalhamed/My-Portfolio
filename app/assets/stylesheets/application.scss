@@ -14,7 +14,6 @@ color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700
 }
 .container .button:hover{text-decoration:none;opacity:0.6}
 .container .say{font-size:16px}
-.container .vertical{border-right:1px solid #bfbfbf;height:160px}
 .container .reference{font-size:13px;color:#707070}
 .container p+a{color:#707070}
 .container .pro-name{color:#73e600}
@@ -94,6 +93,8 @@ border:1px solid #bfbfbf;padding:30px 16px;border-radius:6px;background-color:#f
 100%{opacity: 100%}
 }
 .container h4{color:#73e600;font-size:18px}
+.vertical{border-right:1px solid #bfbfbf;height:200px}
+
 /*contact*/
 .container #contact-wrap h1{margin-bottom:20px;color:#ace600}
 .container #contact-wrap input{border:1px solid #ccc;padding-left:15px;width:300px;margin-bottom:10px}
@@ -138,4 +139,8 @@ text-align: left;
 @media(max-width:768px){
     .custom-header .navbar-header{margin-left:20px}
     .custom-header .container-fluid{width:100%}
+    .container{width:100%}
+    header img{max-width:100%}
+    #mycv{display:block;margin-bottom:20px;text-align:center}
+    .vertical{border:none;height:100%} 
 }
