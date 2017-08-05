@@ -2,6 +2,13 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Cookie|Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*** general ***/
+body{overflow-x:hidden}
+body a:hover{text-decoration:none}
+
 /**** home ***/
 .container .info-title{color:#3d3d5c}
 .container #hello{font-family:'Open Sans';color:#73e600;font-size:50px;font-weight:700}
@@ -63,9 +70,6 @@ header h1,header .tooltip1{display:inline-block}
 }
 
 /**** layout ****/
-
-@import url('https://fonts.googleapis.com/css?family=Cookie|Great+Vibes');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .custom-header{background-color:#202020;border-radius:0}
 .custom-header .container-fluid{width:750px}
 .custom-header h1{font-family:'Open Sans';text-shadow:none;width:160px;color:#ace600;font-weight:700;font-size:40px}
@@ -75,26 +79,25 @@ text-decoration:none;background-color:#202020;color:#bfbfbf
 #career{color:#fff;font-size:22px;font-family:'Great Vibes'}
 .custom-header .nav li{width:94px;margin-right:10px}
 .custom-header .nav a::before{
-content:"";position:absolute;background-color:#bfbfbf;height:2px;
-width:100%;transition:all 0.3s;top:3px;left:0px
+content:"";position:absolute;background-color:#bfbfbf;
+height:2px;width:100%;transition:all 0.3s;top:3px;left:0px
 }
 
-.custom-header .nav a:hover{
+.custom-header .nav a:hover, .custom-header .nav .selected{
 background-color:#202020;color:#ace600
 }
 .custom-header .nav a:hover::before{
    height:3px;background-color:#ace600
 }
-
-.custom-header .navbar-toggle{background-color:#fff;color:#ace600;
+.custom-header .nav .selected::before{
+height:3px;background-color:#ace600
 }
-.custom-header .navbar-toggle:hover{background-color:#ace600;color:#fff}
+.custom-header .navbar-toggle{background-color:#fff;color:#ace600}
+.custom-header .navbar-toggle:hover{
+background-color:#ace600;color:#fff
+}
 footer{color:#bfbfbf;bottom:0px;padding-top:10px;padding-bottom:10px;background-color:#202020;margin-top:150px}
 #navbar-links{overflow:hidden;margin-top:80px}
-
-/*general*/
-body{overflow-x:hidden}
-body a:hover{text-decoration:none}
 
 /**** header ****/
 header{
@@ -156,9 +159,13 @@ text-align: left;
 @media(max-width:768px){
     .custom-header .navbar-header{margin-left:20px}
     .custom-header .container-fluid{width:100%}
+    .custom-header .navbar-toggle{margin-top:-30px}
     .container{width:100%}
     header img{max-width:100%}
     #mycv{display:block;margin-bottom:20px;text-align:center}
     .vertical{border:none;height:100%}
-    #contact-wrap input{width:100%} 
+    #contact-wrap input{width:100%}
+    #navbar-links{margin-top:0px}
+    .custom-header .nav li{margin:auto}
+
 }
