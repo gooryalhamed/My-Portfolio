@@ -6,31 +6,45 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*** general ***/
-body{overflow-x:hidden}
-body a:hover{text-decoration:none}
+body{
+overflow-x:hidden;
+a:hover{text-decoration:none}
+}
 
 /**** home ***/
-.container .info-title{color:#3d3d5c}
-.container #hello{font-family:'Open Sans';color:#73e600;font-size:50px;font-weight:700}
-.container #availabl{font-size:20px;color:#73e600}
-#first-col{padding-left:0px}
-.container .info-item{margin-bottom:20px;font-size:14px}
-.container .info-item #social,.container #desc{display:inline-block;margin-bottom:18px;font-size:16px}
-.container .button{
-color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700
+.container{
+    .info-title{color:#3d3d5c}
+    #hello{font-family:'Open Sans';color:#73e600;font-size:50px;font-weight:700}
+    #availabl{font-size:20px;color:#73e600}
+    .info-item{margin-bottom:20px;font-size:14px}
+    info-item #social,#desc{
+        display:inline-block;margin-bottom:18px;font-size:16px
+    }
+    .button{
+        color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700
+    }
+    .button:hover{text-decoration:none;opacity:0.6}
+    .say{font-size:16px}
+    .reference{font-size:13px;color:#707070}
+    .pro-name{color:#73e600}
+    .link{font-size:14px;color:#505050}
+    a{color:#707070}
 }
-.container .button:hover{text-decoration:none;opacity:0.6}
-.container .say{font-size:16px}
-.container .reference{font-size:13px;color:#707070}
-.container p+a{color:#707070}
-.container .pro-name{color:#73e600}
-.container .link{font-size:14px;color:#505050}
+
+#first-col{padding-left:0px}
 
 /**** cv ****/
-header h1{color:#73e600}header h2{color:#234a51}
-.container hr{border:0.4px solid #d9d9d9}
-.container p{line-height:24px;font-size:16px}.container .work-title{font-size:18px;display: block;color:#234a51}
-.container .container p{line-height:16px}
+header {
+    h1{color:#73e600}
+    h2{color:#234a51}
+}
+.container{
+    hr{border:0.4px solid #d9d9d9}
+    p{line-height:24px;font-size:16px}
+    .work-title{font-size:18px;display: block;color:#234a51}
+    .container p{line-height:16px}
+} 
+
 header h1,header .tooltip1{display:inline-block}
 .tooltip1 {
     position: relative;
@@ -70,32 +84,33 @@ header h1,header .tooltip1{display:inline-block}
 }
 
 /**** layout ****/
-.custom-header{background-color:#202020;border-radius:0}
-.custom-header .container-fluid{width:750px}
-.custom-header h1{font-family:'Open Sans';text-shadow:none;width:160px;color:#ace600;font-weight:700;font-size:40px}
-.custom-header .nav a,.custom-header .nav a:hover,.custome-header .nav a:focus{
-text-decoration:none;background-color:inherit;color:#bfbfbf
-}
-#career{color:#fff;font-size:22px;font-family:'Great Vibes'}
-.custom-header .nav li{width:94px;margin-right:10px}
-.custom-header .nav a::before{
-content:"";position:absolute;background-color:#bfbfbf;
-height:2px;width:100%;transition:all 0.3s;top:3px;left:0px
+.custom-header{
+    background-color:#202020;border-radius:0;
+    .container-fluid{width:750px}
+    h1{
+        font-family:'Open Sans';text-shadow:none;width:160px;color:#ace600;
+        font-weight:700;font-size:40px
+    }
+
+    .nav a,.nav a:focus{
+        text-decoration:none;background-color:inherit;color:#bfbfbf;
+    }
+
+    .nav li{width:94px;margin-right:10px}
+    .nav a::before{
+        content:"";position:absolute;background-color:#bfbfbf;
+        height:2px;width:100%;transition:all 0.3s;top:3px;left:0px
+    }
+    .nav a:hover, .nav .selected{
+        background-color:#202020;color:#ace600;text-decoration:none
+    }
+    .nav a:hover::before{height:3px;background-color:#ace600}
+    .nav .selected::before{height:3px;background-color:#ace600}
+    .navbar-toggle{background-color:#fff;color:#ace600}
+    .navbar-toggle:hover{background-color:#ace600;color:#fff}
 }
 
-.custom-header .nav a:hover, .custom-header .nav .selected{
-background-color:#202020;color:#ace600
-}
-.custom-header .nav a:hover::before{
-   height:3px;background-color:#ace600
-}
-.custom-header .nav .selected::before{
-height:3px;background-color:#ace600
-}
-.custom-header .navbar-toggle{background-color:#fff;color:#ace600}
-.custom-header .navbar-toggle:hover{
-background-color:#ace600;color:#fff
-}
+#career{color:#fff;font-size:22px;font-family:'Great Vibes'} 
 footer{color:#bfbfbf;bottom:0px;padding-top:10px;padding-bottom:10px;background-color:#202020;margin-top:150px}
 #navbar-links{overflow:hidden;margin-top:80px}
 
@@ -114,10 +129,11 @@ border:1px solid #bfbfbf;padding:30px 16px;border-radius:6px;background-color:#f
 .vertical{border-right:1px solid #bfbfbf;height:200px}
 
 /**** contact****/
-#contact-wrap h1{margin-bottom:20px;color:#ace600}
-#contact-wrap input{
-border:1px solid #ccc;padding-left:15px;width:300px;margin-bottom:10px
-}
+#contact-wrap{
+    h1{margin-bottom:20px;color:#ace600}
+    input{border:1px solid #ccc;padding-left:15px;width:300px;margin-bottom:10px}
+
+} 
 .container #contact-wrap input[type=submit]{
 border-color:#99cc00;padding:3px;background-color:#ddff99;
 }
@@ -157,15 +173,16 @@ text-align: left;
 
 /*** responsive ***/
 @media(max-width:768px){
-    .custom-header .navbar-header{margin-left:20px}
-    .custom-header .container-fluid{width:100%}
-    .custom-header .navbar-toggle{margin-top:-30px}
+    .custom-header{
+        .navbar-header{margin-left:20px}
+        .container-fluid{width:100%}
+        .navbar-toggle{margin-top:-30px}
+        .nav li{margin:auto}
+    } 
     .container{width:100%}
     header img{max-width:100%}
     #mycv{display:block;margin-bottom:20px;text-align:center}
     .vertical{border:none;height:100%}
     #contact-wrap input{width:100%}
     #navbar-links{margin-top:0px}
-    .custom-header .nav li{margin:auto}
-
 }
