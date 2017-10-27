@@ -73,8 +73,8 @@ header h1,header .tooltip1{display:inline-block}
 .custom-header{background-color:#202020;border-radius:0}
 .custom-header .container-fluid{width:750px}
 .custom-header h1{font-family:'Open Sans';text-shadow:none;width:160px;color:#ace600;font-weight:700;font-size:40px}
-.custom-header .nav a,.custom-header .nav a:hover{
-text-decoration:none;background-color:#202020;color:#bfbfbf
+.custom-header .nav a,.custom-header .nav a:hover,.custome-header .nav a:focus{
+text-decoration:none;background-color:inherit;color:#bfbfbf
 }
 #career{color:#fff;font-size:22px;font-family:'Great Vibes'}
 .custom-header .nav li{width:94px;margin-right:10px}
