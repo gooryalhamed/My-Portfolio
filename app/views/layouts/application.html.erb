@@ -4,8 +4,8 @@
 	<title>Myportfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<%= csrf_meta_tags %>
-	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<%= stylesheet_link_tag    'application', media: 'all' %>
+	<%= javascript_include_tag 'application' %>
 </head>
 
 <body>
@@ -25,26 +25,27 @@
 			<div class="collapse navbar-collapse" id="navbar-links">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="text-center">
-						<a href="/" class="selected">HOME</a></li>
-						<li class="text-center">
-							<a href="/my-cv">CV</a>
-						</li>
-						<li class="text-center">
-							<a href="/my-projects">PROJECTS</a>
-						</li>
-						<li class="text-center">
-							<a href="/contacts/new">CONTACT</a>
-						</li>
-					</ul>
-				</div>
+						<a href="/" class="selected" id="home">HOME</a>
+					</li>
+					<li class="text-center">
+						<a href="/my-cv" id="cv">CV</a>
+					</li>
+					<li class="text-center">
+						<a href="/my-projects" id="projects">PROJECTS</a>
+					</li>
+					<li class="text-center">
+						<a href="/contacts/new" id="contact">CONTACT</a>
+					</li>
+				</ul>
 			</div>
-		</nav>
-		<div class="container">
-			<%= yield %>
 		</div>
-		<!-- footer -->
-		<footer class="text-center">
-			<p>copyrights&copy;2017</p>
-		</footer>
-	</body>
-	</html>
+	</nav>
+	<div class="container">
+		<%= yield %>
+	</div>
+	<!-- footer -->
+	<footer class="text-center">
+		<p>copyrights&copy;2017</p>
+	</footer>
+</body>
+</html>
