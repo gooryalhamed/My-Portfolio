@@ -10,7 +10,7 @@ body{
 overflow-x:hidden;
 a:hover{text-decoration:none}
 }
-
+#body{margin-top:235px}
 /**** layout ****/
 .custom-header{
     background-color:#202020;border-radius:0;
@@ -129,7 +129,7 @@ header h1,header .tooltip1{display:inline-block}
 
 /**** header ****/
 header{
-border:1px solid #bfbfbf;padding:30px 16px;border-radius:6px;background-color:#f2f2f2;color:#606060;margin-bottom:30px;margin-top:235px
+border:1px solid #bfbfbf;padding:30px 16px;border-radius:6px;background-color:#f2f2f2;color:#606060;margin-bottom:30px
 }
 .container i{font-size:125%;color:#707070}
 .container i:hover{color:black}
