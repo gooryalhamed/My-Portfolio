@@ -1,0 +1,24 @@
+<%= form_for @project do |f|%>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="field">
+			<%= f.text_field :title, placeholder: "title", required: true %>
+		</div>
+		<div class="field">
+			<%= f.text_area :description, placeholder: "description", required: true %>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="field">
+			<%= f.text_field :source, placeholder: "source code's link", required: true %>
+		</div>
+		<div class="field">
+			<%= f.text_field :link, placeholder: "project's link", required: true %>
+		</div>
+		<div class="field">
+			<%= f.file_field :image %>
+		</div>
+	</div>
+</div>
+
+<% end %>
