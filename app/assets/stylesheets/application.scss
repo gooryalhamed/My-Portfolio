@@ -13,12 +13,13 @@ a:hover{text-decoration:none}
 
 /**** home ***/
 .container{
-    .info-title{color:#3d3d5c}
     #hello{font-family:'Open Sans';color:#73e600;font-size:50px;font-weight:700}
     #availabl{font-size:20px;color:#73e600}
-    .info-item{margin-bottom:20px;font-size:14px}
-    info-item #social,#desc{
-        display:inline-block;margin-bottom:18px;font-size:16px
+    #mycv{margin-top:10px}
+    .info-item{
+        margin-bottom:20px;font-size:14px;
+        .info-title{color:#3d3d5c;margin:0px};
+        #social{margin-bottom:5px}
     }
     .button{
         color:#fff;background-color:#73e600;padding:4px 20px;font-weight:700
@@ -187,7 +188,6 @@ text-align: left;
     } 
     .container{width:100%}
     header img{max-width:100%}
-    #mycv{display:block;margin-bottom:20px;text-align:center}
     .vertical{border:none;height:100%}
     #contact-wrap input{width:100%}
     #navbar-links{margin-top:0px}
