@@ -27,8 +27,12 @@ a:hover{text-decoration:none}
     .say{font-size:16px}
     .reference{font-size:13px;color:#707070}
     .pro-name{color:#73e600}
-    .link{font-size:14px;color:#505050}
+    .dropdown-toggle{cursor:pointer;padding:0px 6px}
     a{color:#707070}
+    .feedback{
+        font-size:13px;
+        .fa-eye+span{margin-right:20px}
+    }
 }
 
 #first-col{padding-left:0px}

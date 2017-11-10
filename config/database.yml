@@ -22,7 +22,7 @@ default: &default
 development:
   <<: *default
   database: myportfolio_development
-  username: postgres
+  username: goory
   password: postgres89
   
   # The specified database role being used to connect to postgres.
@@ -58,7 +58,7 @@ development:
 test:
   <<: *default
   database: myportfolio_test
-  username: postgres
+  username: goory
   password: postgres89
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -83,5 +83,5 @@ test:
 production:
   <<: *default
   database: myportfolio_production
-  username: postgres
+  username: goory
   password: postgres89
