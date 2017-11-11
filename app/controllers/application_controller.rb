@@ -7,5 +7,6 @@ class ApplicationController < ActionController::Base
   end
 
   def projects
+  	@projects = Project.all
   end
 end

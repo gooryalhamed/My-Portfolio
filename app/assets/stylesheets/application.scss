@@ -75,6 +75,10 @@ footer{color:#bfbfbf;bottom:0px;padding-top:10px;padding-bottom:10px;background-
         font-size:13px;color:#707070;
         .fa-star-o+span{margin-right:20px}
     }
+.fa-plus-circle{
+    position:absolute;bottom:15px;right:20px;
+    font-size:50px;color:#ace600;cursor:pointer
+}
 
 /**** cv ****/
 header {
@@ -131,7 +135,7 @@ header h1,header .tooltip1{display:inline-block}
 header{
 border:1px solid #bfbfbf;padding:30px 16px;border-radius:6px;background-color:#f2f2f2;color:#606060;margin-bottom:30px
 }
-.container i{font-size:125%;color:#707070}
+
 .container i:hover{color:black}
 .container{width:750px;animation:fade-in 3s forwards;}
 @keyframes fade-in{
