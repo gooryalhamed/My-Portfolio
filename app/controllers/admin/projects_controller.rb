@@ -15,6 +15,9 @@ class Admin::ProjectsController < ApplicationController
 		end
 	end
 
+	def cancel
+	end
+
 	def update
 		uploaded_io = params[:project][:image]
 		if !uploaded_io.blank?

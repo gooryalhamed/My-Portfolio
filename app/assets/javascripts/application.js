@@ -24,3 +24,4 @@ function checkPath(){
 		$('#contact').addClass('selected');
 	}
 }
+

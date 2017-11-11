@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 	namespace :admin do
 		resources :projects, except: [:show]
+		get 'cancel', to: "projects#cancel"
 	end
 	get '/projects', to: "application#projects"
 	root to: "application#home"
