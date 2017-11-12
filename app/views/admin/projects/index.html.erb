@@ -1,6 +1,6 @@
 <div id="projects_wrapper">
 	<% @projects.each do |proj| %>
-	<div class="row" id="proj.id">
+	<div class="row" id="<%=proj.id%>">
 		<%= image_tag("/uploads/#{proj.image}", :class=>"col-sm-3 col-xs-4")%>
 		<div class="col-sm-8">
 			<h4 class="pro-name"><%= proj.title %></h4>

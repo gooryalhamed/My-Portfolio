@@ -10,8 +10,14 @@ class Admin::ProjectsController < ApplicationController
 
 	def create
 		@project = Project.new(params_project)
-		if !@project.save
-			render :new
+		uploaded_io = params[:project][:image]
+		if !uploaded_io.blank?
+			File.open(Rails.root.join('public','uploads',uploaded_io.original_filename), "wb") do |file|
+				file.write(uploaded_io.read)
+			end
+		end
+		if @project.save
+			@project.update(image: uploaded_io.original_filename) if !uploaded_io.blank?
 		end
 	end
 
