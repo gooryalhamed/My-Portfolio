@@ -23,7 +23,7 @@ development:
   <<: *default
   database: myportfolio_development
   username: goory
-  password: postgres89
+  password: ENV['myresume_password']
   
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -59,7 +59,7 @@ test:
   <<: *default
   database: myportfolio_test
   username: goory
-  password: postgres89
+  password: ENV['myresume_password']
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -84,4 +84,4 @@ production:
   <<: *default
   database: myportfolio_production
   username: goory
-  password: postgres89
+  password: ENV['myresume_password']
