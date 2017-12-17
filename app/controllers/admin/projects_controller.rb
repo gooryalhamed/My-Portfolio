@@ -2,9 +2,6 @@ class Admin::ProjectsController < ApplicationController
 	before_action :find_project, only: [:edit, :update, :destroy]
 	def index
 		@projects = Project.all
-	end
-	
-	def new
 		@project = Project.new
 	end
 
@@ -18,6 +15,9 @@ class Admin::ProjectsController < ApplicationController
 		end
 		if @project.save
 			@project.update(image: uploaded_io.original_filename) if !uploaded_io.blank?
+			redirect_to admin_projects_path
+		else
+			render :new
 		end
 	end
 

@@ -1,10 +1,10 @@
 //= require jquery
 //= require jquery_ujs
-
 //= require bootstrap-sprockets
 
 $(document).ready(function(){
 	checkPath();
+	new_proj();
 })
 var current_page = window.location.pathname;
 function checkPath(){
@@ -16,7 +16,7 @@ function checkPath(){
 		$('.custom-header a').removeClass('selected');
 		$('#cv').addClass('selected');
 	}
-	else if (current_page == "/my-projects") {
+	else if (current_page == "/projects") {
 		$('.custom-header a').removeClass('selected');
 		$('#projects').addClass('selected');
 	}
@@ -24,5 +24,10 @@ function checkPath(){
 		$('.custom-header a').removeClass('selected');
 		$('#contact').addClass('selected');
 	}
+}
+function new_proj(){
+	$('.fa-plus-circle').click(function(){
+		$('#new_project_div').removeClass('hidden');
+	})
 }
 
