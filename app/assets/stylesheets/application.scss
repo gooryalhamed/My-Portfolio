@@ -10,7 +10,11 @@ body{
 overflow-x:hidden;
 a:hover{text-decoration:none}
 }
-#body{margin-top:235px}
+#body{margin-top:235px;position:relative}
+
+#projects_wrapper{
+    z-index:0;
+}
 /**** layout ****/
 .custom-header{
     background-color:#202020;border-radius:0;
@@ -188,6 +192,15 @@ text-align: left;
 
 #contact-form,#flash-message{margin-top:260px}
 /*** admin ***/
+#login{
+    position:absolute;width:100%;min-height:100%;z-index:1000;
+    background-color:#111;border-radius:8px;text-align: center;
+    h2 {
+        color:#ace600;margin-top:20px
+    }
+    span{color:#fff;font-size:15px}
+    #ok{color:#111}
+}
 .field {
     margin-bottom:15px;
     input[type=text], textarea{
@@ -195,7 +208,6 @@ text-align: left;
     padding:3px 12px;background-color:#f2f2f2
     }
 }
-
 
 /*** responsive ***/
 @media(max-width:768px){

@@ -1,10 +1,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-
+//= require login
 $(document).ready(function(){
 	checkPath();
 	new_proj();
+	login();
 })
 var current_page = window.location.pathname;
 function checkPath(){
@@ -30,4 +31,5 @@ function new_proj(){
 		$('#new_project_div').removeClass('hidden');
 	})
 }
+
 
