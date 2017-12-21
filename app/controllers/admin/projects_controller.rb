@@ -34,6 +34,7 @@ class Admin::ProjectsController < ApplicationController
 		end
 		if @project.update(params_project)
 			@project.update(image: uploaded_io.original_filename) if !uploaded_io.blank?
+			redirect_to admin_projects_path
 		else
 			render :edit
 		end

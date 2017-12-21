@@ -12,9 +12,6 @@ a:hover{text-decoration:none}
 }
 #body{margin-top:235px;position:relative}
 
-#projects_wrapper{
-    z-index:0;
-}
 /**** layout ****/
 .custom-header{
     background-color:#202020;border-radius:0;
@@ -193,10 +190,10 @@ text-align: left;
 #contact-form,#flash-message{margin-top:260px}
 /*** admin ***/
 #login{
-    position:absolute;width:100%;min-height:100%;z-index:1000;
     background-color:#111;border-radius:8px;text-align: center;
+    padding-top:20px;padding-bottom:40px;
     h2 {
-        color:#ace600;margin-top:20px
+        color:#ace600;
     }
     span{color:#fff;font-size:15px}
     #ok{color:#111}

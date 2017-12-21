@@ -4,8 +4,7 @@
 	<input type="password" id="password" placeholder="Secret code">
 	<button id="ok">Go</button>
 </div>
-
-<div id="projects_wrapper">
+<div id="projects_wrapper" class="hidden">
 	<% @projects.each do |proj| %>
 	<div class="row" id="<%=proj.id%>">
 		<%= image_tag("/uploads/#{proj.image}", :class=>"col-sm-3 col-xs-4")%>
@@ -35,8 +34,8 @@
 		</div> 
 	</div>
 	<% end %>
+	<i class="fa fa-plus-circle"></i>
 </div>
-<i class="fa fa-plus-circle"></i>
 <div id="new_project_div" class="hidden">
 	<h3>Add a new project</h3>
 	<%= form_for([:admin, @project]) do |f| %>
