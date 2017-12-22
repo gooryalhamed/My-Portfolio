@@ -9,39 +9,41 @@
 </head>
 
 <body>
-	<!-- navbar -->
-	<nav class="navbar navbar-fixed-top custom-header">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a>
-					<h1>Yardagan &nbsp;&nbsp;<span style="color:#bfbfbf">Hamed</span>
-					</h1>
-					<span id="career">Web Developer</span>
-				</a>
-				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
-					<i class="fa fa-bars"></i>
-				</button>
+	<div id="wrapper">
+		<!-- navbar -->
+		<nav class="navbar custom-header">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a>
+						<h1>Yardagan &nbsp;&nbsp;<span style="color:#bfbfbf">Hamed</span>
+						</h1>
+						<span id="career">Web Developer</span>
+					</a>
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-links">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="text-center">
+							<a href="/" id="home">HOME</a>
+						</li>
+						<li class="text-center">
+							<a href="/my-cv" id="cv">CV</a>
+						</li>
+						<li class="text-center">
+							<a href="/projects" id="projects">PROJECTS</a>
+						</li>
+						<li class="text-center">
+							<a href="/contacts/new" id="contact">CONTACT</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="collapse navbar-collapse" id="navbar-links">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="text-center">
-						<a href="/" id="home">HOME</a>
-					</li>
-					<li class="text-center">
-						<a href="/my-cv" id="cv">CV</a>
-					</li>
-					<li class="text-center">
-						<a href="/projects" id="projects">PROJECTS</a>
-					</li>
-					<li class="text-center">
-						<a href="/contacts/new" id="contact">CONTACT</a>
-					</li>
-				</ul>
-			</div>
+		</nav>
+		<div class="container" id="content">
+			<%= yield %>
 		</div>
-	</nav>
-	<div class="container" id="body">
-		<%= yield %>
 	</div>
 	<!-- footer -->
 	<footer class="text-center">

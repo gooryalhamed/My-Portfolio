@@ -6,12 +6,20 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*** general ***/
+html,body{
+    height: 100%;
+    margin: 0;
+}
 body{
 overflow-x:hidden;
 a:hover{text-decoration:none}
 }
 #body{margin-top:235px;position:relative}
-
+#wrapper{min-height:100%}
+#content{padding-top:30px;}
+footer{
+    color:#bfbfbf;bottom:0px;height:40px;padding:10px;background-color:#202020;
+}
 /**** layout ****/
 .custom-header{
     background-color:#202020;border-radius:0;
@@ -40,7 +48,6 @@ a:hover{text-decoration:none}
 }
 
 #career{color:#fff;font-size:22px;font-family:'Great Vibes'} 
-footer{color:#bfbfbf;bottom:0px;padding-top:10px;padding-bottom:10px;background-color:#202020;margin-top:150px}
 #navbar-links{overflow:hidden;margin-top:80px}
 
 
@@ -66,7 +73,6 @@ footer{color:#bfbfbf;bottom:0px;padding-top:10px;padding-bottom:10px;background-
         li a:hover{background-color:#e6e6e6}
     }
     h4{font-size:18px;color:#3d3d5c}
-    h4+p{color:#666}
     a{color:#707070}
    
 }
@@ -88,7 +94,7 @@ header {
 }
 .container{
     hr{border:0.4px solid #d9d9d9}
-    p{line-height:24px;font-size:16px}
+    p{line-height:24px;font-size:16px;color:#666}
     .work-title{font-size:18px;display: block;color:#234a51}
     .container p{line-height:16px}
 } 
@@ -143,8 +149,6 @@ border:1px solid #bfbfbf;padding:30px 16px;border-radius:6px;background-color:#f
 0%{opacity:0;}
 100%{opacity: 100%}
 }
-
-.vertical{border-right:1px solid #bfbfbf;height:200px}
 
 /**** contact****/
 #contact-wrap{
