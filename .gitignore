@@ -9,7 +9,7 @@
 
 # Ignore all logfiles and tempfiles.
 .env
-login.js
+#login.js
 /log/*
 /tmp/*
 !/log/.keep
